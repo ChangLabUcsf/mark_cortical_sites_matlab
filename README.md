@@ -1,6 +1,6 @@
 # mark_cortical_sites_matlab
 
-GUI used to manually mark cortical sites on brain meshes.
+GUI used to manually mark cortical sites on brain meshes created using [img_pipe](https://github.com/ChangLabUcsf/img_pipe).
 
 ## Requirements
 [ctmr_gauss_plot](https://github.com/bendichter/ECoG_PPC_RecogMemory/tree/master/Plotting)
@@ -21,7 +21,7 @@ In MATLAB:
 ```matlab
 mark_stimulation_sites('EC61','rh','path/to/server_mount/data_store2/imaging/subjects/');
 ```
-![example screenshot](../mark_stim_sites_ex.png)
+![example screenshot](mark_stim_sites_ex.png)
 
 
 
