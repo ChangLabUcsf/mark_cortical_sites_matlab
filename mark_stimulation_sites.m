@@ -66,11 +66,11 @@ handles.varargin = varargin;
 
 
 if ~exist('data_dir','var') || isempty(data_dir)
-    data_dir = '/Users/bendichter/Desktop/data/';
+    data_dir = '/Users/bendichter/dura_mount/data_store2/imaging/subjects/';
 end
 
-% load([data_dir subject '/Imaging/Meshes/' subject '_' hem '_pial.mat'])
-load([data_dir subject '_' hem '_pial.mat'])
+load([data_dir subject '/Meshes/' subject '_' hem '_pial.mat'])
+% load([data_dir subject '_' hem '_pial.mat'])
 
 axes(handles.axes1);
 ctmr_gauss_plot(cortex,[0,0,0],0,hem);
@@ -82,7 +82,7 @@ if strcmp(hem,'lh')
 else
     xlim([0,100])
 end
-zlim([-30, 90])
+zlim([-60, 90])
 zoom(1.5)
 
 dcm_obj = datacursormode(gcf());
