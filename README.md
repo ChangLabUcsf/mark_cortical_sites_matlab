@@ -23,5 +23,4 @@ mark_stimulation_sites('EC61','rh','path/to/server_mount/data_store2/imaging/sub
 ```
 ![example screenshot](mark_stim_sites_ex.png)
 
-
-
+Select the type of reponse, select the region of brain you wish to mark, and press "mark." When you are done, press "save." Then, if you wish to warp, follow [this notebook](https://github.com/ChangLabUcsf/img_pipe/blob/compute_surface_warp/tutorials/img_pipe_warp_stim.ipynb).
