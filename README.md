@@ -2,9 +2,6 @@
 
 GUI used to manually mark cortical sites on brain meshes created using [img_pipe](https://github.com/ChangLabUcsf/img_pipe).
 
-## Requirements
-[ctmr_gauss_plot](https://github.com/bendichter/ECoG_PPC_RecogMemory/tree/master/Plotting)
-
 ## Installation
 ```
 git clone https://github.com/ChangLabUcsf/mark_cortical_sites_matlab.git
