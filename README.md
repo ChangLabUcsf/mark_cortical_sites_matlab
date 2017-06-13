@@ -8,8 +8,9 @@ git clone https://github.com/ChangLabUcsf/mark_cortical_sites_matlab.git
 ```
 In `startup.m` add:
 ```matlab
-addpath(genpath('path/to/mark_cortical_sites'));
+addpath(genpath('path/to/mark_cortical_sites_matlab'));
 ```
+You may need to create `startup.m` if you do not already have one. Put it in the default MATLAB dir (probably `~/Documents/MATLAB/`).
 
 ## Usage
 It is recommended that you mount one of the servers and use that as your mesh source (see [wiki](https://sites.google.com/site/ucsfchanglab/computational-resources/server-usage-tips))
