@@ -91,6 +91,8 @@ handles.dcm_obj = dcm_obj;
 
 handles.data = {};
 
+handles.status = 'mouth';
+
 uibuttongroup1_SelectionChangedFcn(hObject, eventdata, handles)
 
 % Update handles structure
@@ -206,7 +208,13 @@ function pushbutton2_Callback(hObject, eventdata, handles)
 
 elecmatrix = vertcat(handles.data{:,1});
 eleclabels = handles.data(:,2);
-save([handles.varargin{1}, '_stim_results'], 'elecmatrix','eleclabels')
+[filename, pathname] = uiputfile('*.mat', 'save stim results', [handles.varargin{1}, '_stim_results']);
+save_path = fullfile(pathname,filename);
+
+if save_path
+    save(save_path, 'elecmatrix','eleclabels');
+    display(['results saved to ' save_path])
+end
 
 
 % --- Executes on button press in debug_button.
